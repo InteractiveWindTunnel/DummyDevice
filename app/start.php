@@ -11,7 +11,7 @@ $http->on('request', function ($request, $response) {
 });
 
 $port = isset($_ENV["PORT"]) ? $_ENV["PORT"] : 9090;
-$socket->listen($port);
+$socket->listen($port, "0.0.0.0");
 
 $device = new WindTunnel\DummyDevice\Device();
 $client = new WindTunnel\DummyDevice\TunnelClient('realm1', $loop);
