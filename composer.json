@@ -1,0 +1,22 @@
+{
+    "name": "windtunnel/dummy-device",
+    "description": "Dummy publisher for testing ita-steering",
+    "type": "project",
+    "require": {
+        "voryx/thruway": "^0.3.8",
+        "react/react": "^0.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "WindTunnel\\DummyDevice\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dawid Królak",
+            "email": "taavit@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
