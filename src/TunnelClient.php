@@ -17,7 +17,7 @@ class TunnelClient extends \Thruway\Peer\Client
         $session->register('com.windtunnel.powerOff', [$this->device, 'powerOff']);
         $session->register('com.windtunnel.powerState', [$this->device, 'powerState']);
         $device = $this->device;
-        $this->getLoop()->addPeriodicTimer(0.5, function () use ($session, $device) {
+        $this->getLoop()->addPeriodicTimer(0.1, function () use ($session, $device) {
             $session->publish('com.windtunnel.data', [$device->getSinData()]);
         });
     }

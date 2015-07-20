@@ -24,7 +24,7 @@ class Device
 
     public function getSinData()
     {
-        $this->lastValue += 0.017453;
+        $this->lastValue += deg2rad(5);
         return sin($this->lastValue) + (mt_rand(-10, 10)/200);
     }
 }
