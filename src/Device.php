@@ -25,6 +25,6 @@ class Device
     public function getSinData()
     {
         $this->lastValue += 0.017453;
-        return sin($this->lastValue) + (mt_rand(-10, 10)/20);
+        return sin($this->lastValue) + (mt_rand(-10, 10)/200);
     }
 }
