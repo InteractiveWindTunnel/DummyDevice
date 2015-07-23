@@ -4,7 +4,8 @@
     "type": "project",
     "require": {
         "voryx/thruway": "^0.3.8",
-        "react/react": "^0.4.2"
+        "react/react": "^0.4.2",
+        "ext-event": "*"
     },
     "autoload": {
         "psr-4": {

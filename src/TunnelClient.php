@@ -13,6 +13,9 @@ class TunnelClient extends \Thruway\Peer\Client
      */
     public function onSessionStart($session, $transport)
     {
+        if (null === $session) {
+            return;
+        }
         $session->register('com.windtunnel.powerOn', [$this->device, 'powerOn']);
         $session->register('com.windtunnel.powerOff', [$this->device, 'powerOff']);
         $session->register('com.windtunnel.powerState', [$this->device, 'powerState']);
