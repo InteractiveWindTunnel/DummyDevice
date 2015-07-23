@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8edc0cc3cb158ec0c34207103359ce54",
+    "hash": "960b9efc39645c5d546b7d22b21c4433",
     "packages": [
         {
             "name": "cboden/ratchet",
@@ -1107,8 +1107,6 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "ext-event": "*"
-    },
+    "platform": [],
     "platform-dev": []
 }
